@@ -1,0 +1,53 @@
+body {
+    background: var(--Cream, #F9F6F1);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.header {
+    margin-top: 20px;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; 
+}
+.header_first {
+    margin-left: 10px;
+    display: flex;
+    gap: 45px;
+}
+.header_logo {
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    margin-left: 5%;
+    gap: 20px;
+}
+.header_logotip {
+    margin-top: 10px;
+    
+}
+.header_second {
+    display: flex;
+    gap: 45px;
+    margin-left: 5%;
+}
+.header_third {
+    margin-left: 5%;
+}
+@media screen and (max-width: 767px) {
+    .header_first {
+        display: none;
+    }
+    .header_second {
+        gap: 10px;
+    }
+}

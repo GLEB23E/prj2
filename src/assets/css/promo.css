@@ -1,0 +1,37 @@
+.promo {
+    margin-top: 60px; 
+    height: 200px;
+    background: var(--Black, #212121);
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+}
+.promotxt {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+.email {
+    width: 255px;
+    height: 35px;
+    border: 0;
+    margin-left: 2%;
+    background: var(--Cream, #F9F6F1);
+}
+.sub {
+    width: 185px;
+    height: 40px;
+    margin-left: 2%;
+    background: var(--Accent, #D7B399);
+}
+@media screen and (max-width: 768px) {
+    .promo {
+       display: block;
+       text-align: center;
+    }
+    .sub {
+        margin-top: 30px;
+    }
+}

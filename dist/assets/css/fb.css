@@ -1,0 +1,112 @@
+
+.wrapper {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.wra {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+}
+.sale {
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+}
+.sale_fat {
+    font-weight: 700;
+    font-size: 55px;
+    margin-top: 0;
+}
+button {
+    margin-top: 0;
+    width: 240px;
+    height: 55px;
+    flex-shrink: 0;
+    background: var(--Accent, #D7B399);
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 100;
+}
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ph {
+
+    
+    margin-left: 20px;
+    display: flex;
+}
+.pepa {
+    float: right;
+    margin-left: -40%;
+}
+.carousel {
+    display: flex;
+
+    margin-top: 20px;
+}
+.pr {
+    position: absolute;
+    font-size: 20px;
+}
+.pr2 {
+    margin-top: 35px;
+
+    position: absolute;
+    color: #D84033;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.84px;
+
+}
+.mm {
+    align-items: center;
+}
+.checkbox {
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; 
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+}
+.b {
+    width: 40px;
+    background: #D7B399;
+    height: 7px;
+    flex-shrink: 0;
+}
+.b2 {
+    width: 40px;
+    background: #D7B399;
+    height: 7px;
+    flex-shrink: 0;
+}
+.b3 {
+    width: 40px;
+    background: #D7B399;
+    height: 7px;
+    flex-shrink: 0;
+}
+.b4 {
+    width: 40px;
+    background: #D7B399;
+    height: 7px;
+    flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+    .sale {
+        display: block;
+    }
+    .sale_f {
+        text-align: center;
+    }
+    .pr2 {
+        letter-spacing: 0.24px; 
+    }
+}

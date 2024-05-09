@@ -1,0 +1,72 @@
+.sex {
+    display: flex;
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 50px;
+    height: 250px;
+    letter-spacing: 0.72px;
+}
+.pep {
+    
+    width: 190px;
+    height: 171px;
+    float: right;
+    flex-shrink: 0;
+}
+.men { 
+    width: 50%;
+    
+    background: var(--Cream, #F9F6F1);
+    
+}
+.info2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; 
+}
+.girl {
+    background: #F4F4F4;
+}
+.arr {
+    width: 30px;
+    height: 20px;
+}
+.pep2 {
+    width: 190px;
+    height: 171px;
+    float: right;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.but {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+}
+.info {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+}.info2 {
+    margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+    /* Ваши стили здесь */
+    .sex {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center; /* Центрирует по горизонтали */
+        align-items: center; /
+    }
+    .men {
+        width: 100%;
+    }
+
+}
