@@ -30,6 +30,7 @@
 		"jquery": "^3.7.0",
 		"promise": "^8.3.0",
 		"sass": "^1.71.1",
-		"slick-carousel": "^1.8.1"
+		"slick-carousel": "^1.8.1",
+		"strapi": "^3.6.11"
 	}
 }
