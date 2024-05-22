@@ -2,7 +2,7 @@
 .grid {
     margin-top: 50px;
     text-align: center;
-    font-size: 46px;
+    font-size: 24px;
 }
 
 .search-container {
@@ -10,17 +10,14 @@
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .grid-item {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
     background-color: #f0f0f0;
-    box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
     position: relative; /* Added position relative */
@@ -31,9 +28,9 @@
 }
 
 .gridimg {
-    width: 80%;
-    margin: auto;
-    height: 80%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .gridtxt {
@@ -42,39 +39,62 @@
 }
 
 .price {
-    text-align: center; /* Centering the price */
-    margin-top: 5px; /* Adding margin */
+    text-align: center;
+    font-weight: bold;
+    color: #333;
 }
 
 .add-to-cart-button {
-    width: 100%; /* Make button full width */
-    margin-top: 10px; /* Add margin from the price */
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.more {
+.add-to-cart-button:hover {
+    background-color: #b3866e;
+}
+
+.wra {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
-    width: 220px;
-    height: 55px;
-    flex-shrink: 0;
+}
+
+.idk {
+    padding: 10px 20px;
     color: white;
-    font-size: 29px;
-    text-align: center;
-    background: var(--Accent, #D7B399);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.idk:hover {
+    background-color: #b3866e;
 }
 
 /* Media queries */
 @media screen and (max-width: 768px) {
     .grid {
-        margin-top: 210px;
+        margin-top: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .grid-item {
-        width: calc(33.333% - 10px);
+        padding: 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .grid-item {
-        width: calc(50% - 10px);
+    .grid {
+        margin-top: 10px;
     }
 }
