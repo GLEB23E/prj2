@@ -1,72 +1,78 @@
+/* General styles */
+body {
+    background: var(--Cream, #F9F6F1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for collections */
 .sex {
     display: flex;
-    color: #000;
-    font-size: 24px;
-    font-weight: 300;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 50px;
-    height: 250px;
-    letter-spacing: 0.72px;
+    flex-wrap: wrap;
 }
-.pep {
-    
-    width: 190px;
-    height: 171px;
-    float: right;
-    flex-shrink: 0;
+
+/* Individual collection items */
+.collection {
+    width: calc(50% - 20px); /* 20px for margin between items */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-.men { 
-    width: 50%;
-    
-    background: var(--Cream, #F9F6F1);
-    
+
+.collection:hover {
+    transform: translateY(-5px);
 }
-.info2 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
-    align-items: center; 
+
+.collection-img {
+    width: 100%;
+    display: block;
 }
-.girl {
-    background: #F4F4F4;
+
+.collection-info {
+    padding: 20px;
 }
-.arr {
-    width: 30px;
-    height: 20px;
+
+.collection-title {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
-.pep2 {
-    width: 190px;
-    height: 171px;
-    float: right;
-    margin-top: 3px;
-    flex-shrink: 0;
+
+.collection-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
-.but {
-    width: 80px;
-    height: 30px;
-    display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
-    align-items: center; /* Центрирует по вертикали */
+
+.collection-btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
-.info {
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
-    align-items: center; /* Центрирует по вертикали */
-}.info2 {
-    margin-left: 20px;
+
+.collection-btn:hover {
+    background-color: #b59680;
 }
+
+/* Media queries */
 @media screen and (max-width: 767px) {
-    /* Ваши стили здесь */
     .sex {
-        display: block;
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: center; /* Центрирует по горизонтали */
-        align-items: center; /
-    }
-    .men {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
+    .collection {
+        width: calc(100% - 20px); /* Adjusting width for single column layout */
+    }
 }
